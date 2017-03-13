@@ -1,0 +1,24 @@
+{
+    "name": "hugsbrugs/php-zip",
+    "description": "PHP ZIP Utilities",
+    "authors": [
+        {
+            "name": "Hugo Maugey",
+            "email": "hugo@maugey.fr"
+        }
+    ],
+    "require": {
+        "alchemy/zippy": "^0.4.8",
+        "hugsbrugs/php-filesystem": "^0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "satooshi/php-coveralls": "dev-master"
+    },
+    "autoload":{
+    	"psr-4": {"Hug\\": "src/Hug/"}
+    },
+    "autoload-dev": {
+        "psr-4": { "Hug\\Tests\\": "tests/Hug/" }
+    }
+}
