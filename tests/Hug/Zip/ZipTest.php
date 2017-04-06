@@ -16,19 +16,19 @@ final class ZipTest extends TestCase
 {    
 
     /* ************************************************* */
-    /* *************** Zip::zip_compress *************** */
+    /* ***************** Zip::compress ***************** */
     /* ************************************************* */
 
     /**
      *
      */
-    public function testCanZipCompressWithValidExtension()
+    public function testCanCompressWithValidExtension()
     {
         $source = realpath(__DIR__ . '/../../');
         $destination = sys_get_temp_dir() . '/test.zip';
         // 'zip', 'tar', 'gz', 'bz2'
 
-        $test = Zip::zip_compress($source, $destination);
+        $test = Zip::compress($source, $destination);
 
         $this->assertInternalType('array', $test);
 
@@ -44,12 +44,12 @@ final class ZipTest extends TestCase
     /**
      *
      */
-    public function testCannotZipCompressWithInvalidExtension()
+    public function testCannotCompressWithInvalidExtension()
     {
         $source = realpath(__DIR__ . '/../../');
         $destination = sys_get_temp_dir() . '/test.rar';
 
-        $test = Zip::zip_compress($source, $destination);
+        $test = Zip::compress($source, $destination);
 
         $this->assertInternalType('array', $test);
 
@@ -63,18 +63,18 @@ final class ZipTest extends TestCase
     }
 
     /* ************************************************* */
-    /* *************** Zip::zip_extract *************** */
+    /* ***************** Zip::extract ***************** */
     /* ************************************************* */
 
     /**
      *
      */
-    public function testCanZipExtractWithValidExtension()
+    public function testCanExtractWithValidExtension()
     {
         $source = sys_get_temp_dir() . '/test.zip';
         $destination = realpath(__DIR__ . '/../../../data/');
 
-        $test = Zip::zip_extract($source, $destination);
+        $test = Zip::extract($source, $destination);
 
         $this->assertInternalType('array', $test);
 
@@ -90,12 +90,12 @@ final class ZipTest extends TestCase
     /**
      *
      */
-    public function testCannotZipExtractWithInvalidExtension()
+    public function testCannotExtractWithInvalidExtension()
     {
         $source = sys_get_temp_dir() . '/test.rar';
         $destination = realpath(__DIR__ . '/../../../data/');
 
-        $test = Zip::zip_extract($source, $destination);
+        $test = Zip::extract($source, $destination);
 
         $this->assertInternalType('array', $test);
 

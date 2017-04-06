@@ -22,7 +22,7 @@ use Hug\Zip\Zip as Zip;
 
 ### Compress File or Folder
 ```php
-$result = Zip::zip_compress($source, $destination);
+$result = Zip::compress($source, $destination);
 ```
 Outputs
 ```
@@ -40,7 +40,7 @@ Outputs
 
 ### Uncompress File or Folder
 ```php
-$result = Zip::zip_extract($source, $destination);
+$result = Zip::extract($source, $destination);
 ```
 Outputs
 ```
@@ -67,3 +67,7 @@ UNKNOWN_ERROR
 ```
 composer exec phpunit
 ```
+
+## Author
+
+Hugo Maugey [visit my website ;)](https://hugo.maugey.fr)

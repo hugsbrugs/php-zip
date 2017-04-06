@@ -19,7 +19,7 @@ class Zip
      * @return array $response
      *
      */
-    public static function zip_compress($source, $destination, $stats = false)
+    public static function compress($source, $destination, $stats = false)
     {
         $response = [
             'status' => 'error', 
@@ -110,7 +110,7 @@ class Zip
      *
      * @return array $response
      */
-    public static function zip_extract($source, $destination, $stats = false)
+    public static function extract($source, $destination, $stats = false)
     {
         $response = [
             'status' => 'error',
