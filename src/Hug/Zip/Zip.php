@@ -5,6 +5,9 @@ namespace Hug\Zip;
 use Alchemy\Zippy\Zippy;
 use Hug\FileSystem\FileSystem as FileSystem;
 
+/**
+ *
+ */
 class Zip
 {
     /**
