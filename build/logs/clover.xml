@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1491513865">
-  <project timestamp="1491513865">
+<coverage generated="1511907160">
+  <project timestamp="1511907160">
     <package name="Hug\Zip">
       <file name="/var/www/php-utils/php-zip/src/Hug/Zip/Zip.php">
         <class name="Zip" namespace="Hug\Zip">
-          <metrics complexity="17" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="40" elements="75" coveredelements="40"/>
+          <metrics complexity="17" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="40" elements="76" coveredelements="40"/>
         </class>
-        <line num="22" type="method" name="compress" visibility="public" complexity="9" crap="15.71" count="2"/>
+        <line num="22" type="method" name="compress" visibility="public" complexity="9" crap="16.38" count="2"/>
         <line num="25" type="stmt" count="2"/>
         <line num="26" type="stmt" count="2"/>
         <line num="27" type="stmt" count="2"/>
@@ -22,6 +22,7 @@
         <line num="45" type="stmt" count="0"/>
         <line num="49" type="stmt" count="1"/>
         <line num="52" type="stmt" count="1"/>
+        <line num="53" type="stmt" count="0"/>
         <line num="54" type="stmt" count="1"/>
         <line num="55" type="stmt" count="1"/>
         <line num="57" type="stmt" count="1"/>
@@ -81,9 +82,9 @@
         <line num="176" type="stmt" count="0"/>
         <line num="177" type="stmt" count="0"/>
         <line num="180" type="stmt" count="2"/>
-        <metrics loc="183" ncloc="156" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="40" elements="75" coveredelements="40"/>
+        <metrics loc="183" ncloc="156" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="40" elements="76" coveredelements="40"/>
       </file>
     </package>
-    <metrics files="1" loc="183" ncloc="156" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="73" coveredstatements="40" elements="75" coveredelements="40"/>
+    <metrics files="1" loc="183" ncloc="156" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="74" coveredstatements="40" elements="76" coveredelements="40"/>
   </project>
 </coverage>
